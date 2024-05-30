@@ -30,7 +30,7 @@ export default function FoodCard({
   };
 
   return (
-    <div className="w-full h-[140px] md:w-[95%] m-auto md:pt-10 shadow-md py-2 flex md:h-[250px]  justify-between  border-b-2 ">
+    <div className="w-full h-[140px]  md:w-[95%] m-auto md:pt-10 shadow-md py-2 flex md:h-[250px]  justify-between  border-b-2 mt-3">
       <div className="flex flex-col  w-[60%] md:w-[50%]  ps-5  gap-2  ">
         <div className="w-full flex gap-4 items-center">
           <p className=" font-bold md:text-3xl">{name}</p>
@@ -54,12 +54,12 @@ export default function FoodCard({
       </div>
       <div className="w-[30%] h-[100%] relative  overflow-hidden">
         <img
-          className="w-full h-[90%] mt-2 rounded-lg -z-10"
+          className="w-full h-[90%]  mt-2 rounded-lg -z-10"
           src={image}
           alt=""
         />
         <Button
-          className="absolute bottom-0 left-6 z-20"
+          className="absolute bottom-0 left-6 z-20 md:left-[50%] md:w-20 md:py-2 md:text-md"
           size={"chef"}
           variant={"chef"}
           onClick={() => handleClick({ name, rating, description, image, id })}

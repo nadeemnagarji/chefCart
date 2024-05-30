@@ -8,7 +8,7 @@ export default function NextPageDiv() {
   const navigate = useNavigate();
 
   const handleRoute = () => {
-    navigate(`/dish/${food.id}`);
+    navigate(`/dish/${food?.id}`);
   };
   return (
     <div

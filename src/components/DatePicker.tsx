@@ -11,10 +11,6 @@ import {
   PopoverTrigger,
 } from "@/components/ui/popover";
 
-type StyleProps = {
-  classes: string;
-};
-
 export default function DatePickerDemo() {
   const [date, setDate] = React.useState<Date>();
 

@@ -6,7 +6,7 @@ export default function DishIcons({
   url: string;
 }) {
   return (
-    <div className="w-16 h-16 border-[#FFB766] border rounded-full flex items-center justify-center relative overflow-hidden">
+    <div className="w-16 h-16 md:w-24 md:h-24 border-[#FFB766] border rounded-full flex items-center justify-center relative overflow-hidden">
       <div
         className="absolute inset-0 bg-cover bg-center bg-opacity-50"
         style={{

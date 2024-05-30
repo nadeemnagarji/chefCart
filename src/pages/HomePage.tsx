@@ -72,13 +72,13 @@ export default function HomePage() {
   }, []);
 
   return (
-    <div className=" w-full bg-red-700 h-full">
+    <div className=" w-full md:w-[99%]  bg-[#1C1C1C] h-full">
       <NavBar />
-      <div className=" w-full h-[7%] bg-[#1C1C1C] mb-[-20px] "></div>
+      <div className=" w-full  h-[7%] bg-[#1C1C1C] mb-[-20px] "></div>
       <CalenderComp />
 
-      <div className=" relative top-[-70px] z-0  w-full h-[80%] bg-white">
-        <div className=" px-4 pb-2 pt-[85px] flex gap-2   overflow-x-scroll">
+      <div className=" relative top-[-70px] z-0  w-full   bg-white">
+        <div className=" px-4 pb-2 pt-[85px] flex gap-2  md:w-[98%] m-auto  overflow-x-scroll md:justify-around">
           {cuisines.map((item) => (
             <Badge key={item} variant={"outline"}>
               {item}
@@ -86,9 +86,9 @@ export default function HomePage() {
           ))}
         </div>
 
-        <div className="px-4 flex flex-col gap-2 mt-3 overflow-hidden ">
+        <div className="px-4 md:w-[98%] m-auto flex flex-col gap-2 mt-3 overflow-hidden ">
           <p className=" text-xl font-bold">Popular Dishes</p>
-          <div className=" w-full flex  gap-2   overflow-x-scroll">
+          <div className=" w-full flex  gap-2  md:justify-around overflow-x-scroll">
             {PopularDishes.map((dish) => {
               return (
                 <div key={dish.name} className=" flex-shrink-0">
@@ -100,13 +100,13 @@ export default function HomePage() {
         </div>
 
         <div className="px-4  flex flex-col gap-2 mt-3 h-[60%] bg-white">
-          <div className="w-full flex justify-between items-center">
-            <p className="  text-xl font-bold flex items-center gap-1">
+          <div className="w-full md:w-[98%] m-auto flex justify-between items-center">
+            <p className="  text-xl font-bold flex items-center gap-1 ">
               Recommended <ChevronDown />
             </p>
             <Button size="sm">Menu</Button>
           </div>
-          <div className="flex flex-col   gap-2 overflow-y-auto ">
+          <div className="flex flex-col mt-2  gap-2 overflow-y-auto ">
             {dish &&
               dish.length &&
               dish.map((item) => {

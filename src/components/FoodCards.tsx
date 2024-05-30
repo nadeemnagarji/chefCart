@@ -30,27 +30,27 @@ export default function FoodCard({
   };
 
   return (
-    <div className="w-full h-[140px] py-2 flex  justify-between  border-b-2 ">
-      <div className="flex flex-col  w-[60%]  gap-2  ">
+    <div className="w-full h-[140px] md:w-[95%] m-auto md:pt-10 shadow-md py-2 flex md:h-[250px]  justify-between  border-b-2 ">
+      <div className="flex flex-col  w-[60%] md:w-[50%]  ps-5  gap-2  ">
         <div className="w-full flex gap-4 items-center">
-          <p className=" font-bold">{name}</p>
+          <p className=" font-bold md:text-3xl">{name}</p>
           <div className="w-8 h-4 flex justify-center items-center text-gray-500 bg-green-300 text-[10px] rounded-sm font-bold">
             {rating}
           </div>
         </div>
-        <div className="w-full flex items-center justify-between">
+        <div className="w-full flex items-center justify-between ">
           <div className="ms-2 w-1/3 flex mt-1  gap-3 border-e-2 border-gray">
-            <img src={fridge} className=" w-5" alt="" />
-            <img src={fridge} className=" w-5" alt="" />
+            <img src={fridge} className=" w-5 md:w-8" alt="" />
+            <img src={fridge} className=" w-5 md:w-8" alt="" />
           </div>
-          <div className="w-1/2 flex flex-col">
-            <p className=" text-[10px] font-bold">Ingrediants</p>
-            <p className=" text-[10px] font-bold underline text-[#FF9F32] ">
+          <div className="w-1/2 flex flex-col ">
+            <p className=" text-[10px] md:text-lg font-bold">Ingrediants</p>
+            <p className=" text-[10px] md:text-lg font-bold underline text-[#FF9F32] ">
               View list
             </p>
           </div>
         </div>
-        <p className="text-sm text-gray-800">{description}</p>
+        <p className="text-sm text-gray-800 md:text-lg">{description}</p>
       </div>
       <div className="w-[30%] h-[100%] relative  overflow-hidden">
         <img

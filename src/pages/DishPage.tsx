@@ -66,10 +66,12 @@ export default function DishPage() {
             {dish?.name}
           </h1>
           <div className="w-8 h-4 mb-1 self-end flex justify-center items-center text-gray-500 bg-green-300 text-[10px] rounded-sm font-bold">
-            {food.rating}
+            {food && food?.rating}
           </div>
         </div>
-        <p className=" w-1/2 text-gray-700 text-sm z-10">{food.description}</p>
+        <p className=" w-1/2 text-gray-700 text-sm z-10">
+          {food && food?.description}
+        </p>
         <div className="z-10 w-[60%] flex gap-2 items-center mt-3">
           <Clock />{" "}
           <p className="z-10 text-black text-sm font-bold">

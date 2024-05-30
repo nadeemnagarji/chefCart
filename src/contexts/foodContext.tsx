@@ -34,5 +34,9 @@ export const FoodProvider: React.FC<FoodProviderProps> = ({ children }) => {
 };
 
 export const useFoodContext = () => {
-  return useContext(FoodContext);
+  const context = useContext(FoodContext);
+  if (context === undefined) {
+    throw new Error("useFoodContext must be used within a FoodProvider");
+  }
+  return context;
 };

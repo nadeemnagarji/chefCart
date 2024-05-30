@@ -13,8 +13,6 @@ type appliance = {
   name: string;
 };
 
-type spices = spice[];
-
 type vegetable = {
   name: string;
   quantity: number;

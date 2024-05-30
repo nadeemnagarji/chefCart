@@ -13,7 +13,7 @@ export default function NextPageDiv() {
   return (
     <div
       onClick={() => handleRoute()}
-      className="w-[80%] py-2 mb-3 rounded m-auto bg-black text-white flex items-center justify-around "
+      className="w-[80%] md:w-[250px] mt-4 py-2 mb-3 rounded m-auto bg-black text-white flex items-center justify-around "
     >
       {food && <p className=" text-sm">Go to {food.name} page</p>}
       <MoveRight />

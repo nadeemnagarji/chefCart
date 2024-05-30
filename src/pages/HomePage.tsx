@@ -74,10 +74,10 @@ export default function HomePage() {
   return (
     <div className=" w-full md:w-[99%]  bg-[#1C1C1C] h-full">
       <NavBar />
-      <div className=" w-full  h-[7%] bg-[#1C1C1C] mb-[-20px] "></div>
+      <div className=" w-full  h-[7%] bg-[#1C1C1C] mb-[-40px] "></div>
       <CalenderComp />
 
-      <div className=" relative top-[-70px] z-0  w-full   bg-white">
+      <div className=" relative top-[-70px] z-0  w-full h-[85%]  bg-white">
         <div className=" px-4 pb-2 pt-[85px] flex gap-2  md:w-[98%] m-auto  overflow-x-scroll md:justify-around">
           {cuisines.map((item) => (
             <Badge key={item} variant={"outline"}>
